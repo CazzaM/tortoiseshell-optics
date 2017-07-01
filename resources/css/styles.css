@@ -49,8 +49,13 @@ header{
   font-size: 1rem;
 }
 
-.company-header__right-side li{
+.company-header__right-side li,
+.company-header__right-side--mobile li{
   padding: 1rem 2rem 1rem 0;
+}
+
+.company-header__right-side--mobile{
+  display:none;
 }
 
 .header-banner{
@@ -88,7 +93,6 @@ h1{
   text-align: center;
 }
 
-
 .icon-section--portrait-width{
   width: 3.5rem;
 }
@@ -103,16 +107,144 @@ h1{
 }
 
 .main-section{
-  margin: 0 auto;
+  margin: auto;
   display: flex;
-  width: 35%;  
+  justify-content: center;
+  width: 35%;
 }
 
 h2{
-  width: 10rem;
+  max-width: 10rem;
   padding: 0.5rem 0 0.5rem 1.25rem;
 }
 
 .main-section p{
   margin: 1rem 5% 5rem 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+.footer img{
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width:768px){
+  .main-section{
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header{
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  nav{
+    margin:0 auto;
+  }
+
+  h1{
+    font-size: 1.33rem;
+     padding: .75rem 4rem;
+     margin-top: 5rem;
+     margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .container{
+    width: 100%;
+  }
+
+  .main-section{
+    width: 100%;
+  }
+
+  .company-header__right-side--mobile{
+    display:block;
+    margin: auto 0;
+    justify-content: flex-end;
+  }
+
+  .company-header__right-side {
+    display: none;
+  }
+
+  .company-header__left-side span{
+    display: none;
+  }
+
+  header{
+    padding-top: 0;
+    height: 12rem;
+    background-position: 20%;
+  }
+
+  .header-banner{
+    width: 100%;
+    display: block;
+  }
+
+  h1{
+   margin: 0;
+   font-size: 1rem;
+   padding: 1rem 0;
+   margin-top: 9rem;
+   text-align: center;
+  }
+
+  .icon-section{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 3.77rem 0;
+ }
+
+ .icon-section--spacing {
+   width: 5rem;
+   margin: 1.54rem 0 0 0;
+   justify-content: center;
+ }
+
+ .icon-section--titles{
+   font-size: .77rem;
+   margin-top: 1.54rem;
+ }
+
+ .main-section{
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ h2{
+   max-width: 100%;
+   text-align: center;
+ }
+
+ .main-section p{
+   font-size: 0.77rem;
+   margin: 1rem 0 4rem 0;
+ }
+
+ .footer img{
+   padding: 4rem 0;
+ }
+
+.footer span{
+  display: none;
+}
+
+ .footer {
+   justify-content: center;
+ }
+
 }
