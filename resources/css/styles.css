@@ -1,0 +1,118 @@
+html{
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+body,
+header,
+footer{
+  font-family: helvetica;
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+header{
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-header__left-side,
+.company-header__right-side li{
+  display: inline-flex;
+  align-items: center;
+}
+
+.company-header__left-side img{
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.company-header,
+  h2 {
+  color: white;
+  background-color: cadetblue;
+  font-size: 1rem;
+}
+
+.company-header__right-side li{
+  padding: 1rem 2rem 1rem 0;
+}
+
+.header-banner{
+   display:flex;
+   margin: 0 auto;
+   justify-content: flex-end;
+}
+
+h1, h2{
+   font-weight: bold;
+}
+
+h1{
+   background-color: white;
+   font-size: 2rem;
+   line-height: 1.2rem;
+   padding: 1.5rem 5rem;
+   margin-top: 10rem;
+   margin-right: -2rem;
+}
+
+ .icon-section{
+  display:flex;
+  justify-content: center;
+}
+
+.icon-section--spacing {
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.icon-section--portrait-width{
+  width: 3.5rem;
+}
+
+.icon-section--landscape-width{
+  width: 5rem;
+}
+
+.ruler-icon {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.main-section{
+  margin: 0 auto;
+  display: flex;
+  width: 35%;  
+}
+
+h2{
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+
+.main-section p{
+  margin: 1rem 5% 5rem 0;
+}
